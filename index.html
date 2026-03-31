@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[한국불상연구] 제1회 현장 답사 신청서</title>
+    <style>
+      :root {
+        --amber: #ffbf00;
+        --sage: #87a96b;
+        --bg: #fffef8;
+        --text: #2e2e2e;
+        --muted: #6d6d6d;
+        --card: #ffffff;
+        --line: #e8e3d3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+        color: var(--text);
+        background: linear-gradient(140deg, #fffdf3 0%, #f7fbf3 100%);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px 40px;
+      }
+
+      .hero {
+        background: linear-gradient(120deg, rgba(255, 191, 0, 0.18), rgba(135, 169, 107, 0.22));
+        border: 1px solid #f2e4ab;
+        border-radius: 18px;
+        padding: 28px;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(1.35rem, 3vw, 2rem);
+      }
+
+      .subtitle {
+        font-weight: 700;
+        color: #5b4a00;
+        margin-bottom: 12px;
+      }
+
+      .inquiry {
+        margin-top: 16px;
+        background: rgba(255, 255, 255, 0.65);
+        border-left: 4px solid var(--amber);
+        padding: 10px 12px;
+        border-radius: 8px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 22px;
+        margin-bottom: 18px;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04);
+      }
+
+      h2 {
+        font-size: 1.15rem;
+        margin: 0 0 10px;
+        color: #3a4f2a;
+      }
+
+      p.guide {
+        margin-top: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .field {
+        margin-bottom: 16px;
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .required::after {
+        content: " *";
+        color: #d93025;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        padding: 11px 12px;
+        font-size: 0.95rem;
+        background: #fff;
+      }
+
+      textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+
+      .checks {
+        display: grid;
+        gap: 8px;
+      }
+
+      .checks label {
+        font-weight: 500;
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+      }
+
+      .inline {
+        display: grid;
+        grid-template-columns: 1fr 120px;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .design-tip {
+        background: #f6fbf1;
+        border: 1px solid #d9e9cc;
+      }
+
+      .palette {
+        display: flex;
+        gap: 10px;
+        margin-top: 8px;
+      }
+
+      .chip {
+        border: 1px solid #ccc;
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.88rem;
+      }
+
+      .amber {
+        background: rgba(255, 191, 0, 0.2);
+      }
+
+      .sage {
+        background: rgba(135, 169, 107, 0.25);
+      }
+
+      button {
+        border: 0;
+        border-radius: 10px;
+        background: linear-gradient(120deg, var(--amber), #f0cc5a);
+        color: #2b2200;
+        font-weight: 700;
+        padding: 12px 16px;
+        cursor: pointer;
+      }
+
+      .foot {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1>📋 [한국불상연구] 제1회 현장 답사 신청서</h1>
+        <p class="subtitle">제1회 '천년의 숨결' 현장 답사 참가 신청 (경주 남산)</p>
+        <p>
+          강의실에서 배운 불상의 미학을 현장에서 직접 확인하는 첫 번째 발걸음입니다.
+          신대현 교수님의 실시간 해설과 함께하는 이번 답사에 많은 참여 바랍니다.
+        </p>
+        <p class="inquiry"><strong>문의:</strong> 신대현 교수님 연구실 (010-XXXX-XXXX)</p>
+      </section>
+
+      <form class="application" action="#" method="post">
+        <section class="card">
+          <h2>1. 기본 정보 (수강생 확인)</h2>
+          <p class="guide">본 동호회는 신대현 교수님 수강생을 대상으로 하므로 정확한 정보를 기재해 주세요.</p>
+
+          <div class="field">
+            <label class="required" for="name">이름</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="field">
+            <label class="required" for="student-id">학번</label>
+            <input id="student-id" name="student-id" type="text" required />
+          </div>
+
+          <div class="field">
+            <label class="required" for="phone">연락처</label>
+            <input id="phone" name="phone" type="tel" placeholder="예: 010-1234-5678" required />
+          </div>
+
+          <div class="field">
+            <label class="required" for="email">이메일</label>
+            <input id="email" name="email" type="email" placeholder="안내 자료 발송용" required />
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>2. 답사 참여 정보</h2>
+          <p class="guide">원활한 이동과 식사 준비를 위한 항목입니다.</p>
+
+          <div class="field">
+            <label>차량 지원 여부 (중복 선택 가능)</label>
+            <div class="checks">
+              <label><input type="checkbox" name="transport" value="bus" /> 대형 버스 이용 (집결지: 학교 정문)</label>
+              <label><input type="checkbox" name="transport" value="self" /> 개별 이동 (경주 남산 입구 집결)</label>
+              <label><input type="checkbox" name="transport" value="car" /> 개인 차량 지원 가능</label>
+            </div>
+          </div>
+
+          <div class="field inline">
+            <label for="seats">동승 가능 인원</label>
+            <input id="seats" name="seats" type="number" min="0" placeholder="명" />
+          </div>
+
+          <div class="field">
+            <label for="diet">식단 관련 특이사항</label>
+            <input id="diet" name="diet" type="text" placeholder="예: 비건, 알레르기 등" />
+          </div>
+
+          <div class="field">
+            <label>답사 중 희망 역할 (누구나 임직원!)</label>
+            <div class="checks">
+              <label><input type="checkbox" name="role" value="recorder" /> 기록가 (사진 및 영상 촬영)</label>
+              <label><input type="checkbox" name="role" value="supporter" /> 서포터 (인원 체크 및 안전 관리)</label>
+              <label><input type="checkbox" name="role" value="assistant" /> 기획 보조 (현장 세미나 준비 도움)</label>
+              <label><input type="checkbox" name="role" value="participant" /> 일반 참가자</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>3. 사전 질문 및 건의사항</h2>
+          <div class="field">
+            <label for="artifact">답사지(경주 남산)에서 가장 보고 싶은 유물은?</label>
+            <input id="artifact" name="artifact" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="question">교수님께 드리는 질문</label>
+            <textarea id="question" name="question" placeholder="현장에서 답변해 드립니다."></textarea>
+          </div>
+
+          <div class="field">
+            <label class="required">개인정보 수집 및 이용 동의</label>
+            <div class="checks">
+              <label><input type="radio" name="consent" value="agree" required /> 동의함 (답사 보험 가입 및 안내용)</label>
+            </div>
+          </div>
+
+          <button type="submit">신청서 제출</button>
+          <p class="foot">※ 실제 제출 처리를 위해서는 구글 폼/백엔드 연동이 필요합니다.</p>
+        </section>
+      </form>
+
+      <section class="card design-tip">
+        <h2>🎨 구글 폼 디자인 팁 (산뜻한 스타일)</h2>
+        <ul>
+          <li>헤더 이미지: 사찰 처마 풍경 또는 인자한 불상 미소 사진을 사용해 홈페이지 톤과 통일</li>
+          <li>테마 색상 추천: 앰버(Amber) #FFBF00 또는 세이지 그린 #87A96B</li>
+          <li>글꼴 스타일: 머리글은 Roboto/Playfair Display, 질문·본문은 Sans Serif</li>
+        </ul>
+        <div class="palette">
+          <span class="chip amber">Amber #FFBF00</span>
+          <span class="chip sage">Sage Green #87A96B</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
